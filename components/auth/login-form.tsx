@@ -32,7 +32,7 @@ export const LoginForm = () => {
 
         startTransition(async () => {
             const data = await login(values);
-            setError(data.error);
+            setError(data?.error);
             setSuccess(data.success);
         });
     }
